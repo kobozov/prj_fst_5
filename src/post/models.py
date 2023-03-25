@@ -3,8 +3,8 @@ from sqlalchemy import Table, Column, Integer, String, TIMESTAMP, MetaData
 
 metadata = MetaData()
 
-blog_table = Table(
-    "blog",
+post_table = Table(
+    "post",
     metadata,
     Column("id", Integer, primary_key=True,autoincrement=True),
     Column("title", String),
@@ -12,4 +12,7 @@ blog_table = Table(
     Column("content", String),
     Column("create_at", TIMESTAMP),
 )
+
+class Post(object):
+    pass
 

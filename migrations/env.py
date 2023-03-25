@@ -11,7 +11,7 @@ import sys
 sys.path.append(os.path.join(sys.path[0], 'src'))
 
 from src.config import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS
-from src.blog.models import metadata as metadata_blog
+from src.post.models import metadata as metadata_blog
 
 
 # this is the Alembic Config object, which provides
